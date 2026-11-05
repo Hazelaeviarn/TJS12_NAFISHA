@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 1 - Hitung Luas Persegi Panjang</title>
+</head>
+<body>
+
+    <h2>Hasil Perhitungan Luas Persegi Panjang</h2>
+    <p id="hasilLuas"></p>
+
+    <script>
+        function hitungLuas(panjang, lebar) {
+            return panjang * lebar;
+        }
+
+        let hasil = hitungLuas(12, 5);
+
+        document.getElementById("hasilLuas").innerHTML = "Luas persegi panjang: " + hasil;
+    </script>
+
+</body>
+</html>

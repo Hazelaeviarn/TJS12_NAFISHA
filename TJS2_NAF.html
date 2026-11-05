@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 2 - Konstruktor Sepeda</title>
+</head>
+<body>
+
+    <h2>Informasi Sepeda</h2>
+
+    <script>
+        function Sepeda(merk, jenis, warna) {
+            this.merk = merk;
+            this.jenis = jenis;
+            this.warna = warna;
+
+            this.getInfo = function() {
+                return "Sepeda " + this.merk + " berjenis " + this.jenis + " berwarna " + this.warna + ".";
+            };
+
+            this.tampilkanInfo = function() {
+                document.write("<p>" + this.getInfo() + "</p>");
+            };
+        }
+
+        let sepeda1 = new Sepeda("Polygon", "Mountain Bike", "Hitam");
+        let sepeda2 = new Sepeda("United", "Road Bike", "Merah");
+
+        sepeda1.tampilkanInfo();
+        sepeda2.tampilkanInfo();
+    </script>
+
+</body>
+</html>
